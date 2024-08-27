@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A basic Web Scrapping project with NODEJS and AWS services.",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
     "build": "babel src -d dist",
     "start:prod": "node dist/index.js",
@@ -22,6 +22,7 @@
     "axios": "^1.7.5",
     "bcrypt": "^5.1.1",
     "cheerio": "^1.0.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",

@@ -3,12 +3,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 import os from "os";
 import morgan from "morgan";
+import cookieParser from "cookie-parser";
 import { errorMiddleware } from "./middlewares/errorMiddleware.js";
 
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 /* ---------- ROUTES ---------- */
 import authRoutes from "./routes/authRoutes.js";
